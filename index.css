@@ -21,7 +21,8 @@ section, summary, time, mark, audio, video {
 body { 
 	width: 100%;
 	height: 100%;
-    background-color: #000000;
+	background-color: #000000;
+	overflow: visible;
 }
 
 .console {
