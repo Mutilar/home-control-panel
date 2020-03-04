@@ -43,7 +43,8 @@ table {
  
 
 code {
-	font: 20px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+	font: 26px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+	/* font-weight: bold; */
 	color: #7BECFC;
 	border-radius: 3px;
 	background-clip: padding-box;
