@@ -35,8 +35,11 @@ window.onload = function () {
         "├──────────┬─────────┬─────────────┬─────────┬──────────┼",
         "│ < BACK < │         │  FLOORPLAN  │         │ > EXIT > │",
         "├──────────┴─────────┴─────────────┴─────────┴──────────┼",
-        "│  Map: Click on Xs to interact with Hue Lights, Smart  │",
-        "│  Switches, and Google Homes! Logs visible below map.  │",
+        "│                                                       │",
+        "│  INTERACT with your DIGITAL HABITAT via TOUCH INPUT:  │",
+        "│   * TOGGLE various LIGHTS, SWITCHES, and PERIPHERALS  │",
+        "│   * VIEW SENSOR DATA for informed ECO-DECISION-MAKING │",
+        "│                                                       │",
         "├────────────────────────────────┬───────┬───────┬──────┤",
         "│┌───────────┬──────────┐┌───────┴───────┴───────┴─────┐│",
         "││           │┌────────┐││ ┌────┐                 ┌───┐││",
@@ -69,12 +72,8 @@ window.onload = function () {
         "│├┬──┘      │  ││   ││            ││   │[][]│ │ FRZ │  ││",
         "│└──────────┴──┘└───┴┴─┬───────┬──┴┴───┴────┴─┴─────┴──┘│",
         "├──────────────────────┴───────┴────────────────────────┤",
-        "│  Data Stream: 91605d08-10bf-4dee-aa26-6da953563f37ee  │",
-        "│  448b8c54-ebc2-499d-a372-f4585fa15-d7b2c42-57eb-2443  │",
-        "│  448b8c54-ebc2-499d-a372-f4585fa15-d7b2c42-57eb-2443  │",
-        "│  448b8c54-ebc2-499d-a372-f4585fa15-d7b2c42-57eb-2443  │",
-        "│  448b8c54-ebc2-499d-a372-f4585fa15-d7b2c42-57eb-2443  │",
-        "│  448b8c54-ebc2-499d-a372-f4585fa15-d7b2c42-57eb-2443  │",
+        "│ LOG: read Sensor(id='switch1').state;                 │",
+        "│      write Light(id='light1').on = 1;                 │",
         "└───────────────────────────────────────────────────────┘"
   
     )
