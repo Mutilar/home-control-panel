@@ -15,26 +15,20 @@ function tableCreate() {
     body.appendChild(tbl);
 }
 
-
-
-window.onload = function () {
-    tableCreate();
-    console.log("Loaded...");
-
-
-
-    let ascii_display = [];
+function tick() {
+    
+    var ascii_display = [];
 
     ascii_display.push(
-        "┌───────────────────────────────────────────────────────┐",
-        "│              ┬   ┌───┐   ┌───┐   ┬───┐                │",
-        "│              │   │       │   │   │   │                │",
-        "│              │   │ ──┬   │   │   ├─┬─┘                │",
-        "│              │   │   │   │   │   │ └─┐        Mutilar │",
-        "│              ┴ . └───┘ . └───┘ . ┴   ┴ .      v.1.0.0 │",
-        "├──────────┬─────────┬─────────────┬─────────┬──────────┼",
-        "│ < BACK < │         │  FLOORPLAN  │         │ > EXIT > │",
-        "├──────────┴─────────┴─────────────┴─────────┴──────────┼",
+        "┌────────────────────────────────────────────┬──────────┐",
+        "│       ┬   ┌───┐   ┌───┐   ┬───┐            │          │",
+        "│       │   │       │   │   │   │            │          │",
+        "│       │   │ ──┬   │   │   ├─┬─┘            ├──────────┤",
+        "│       │   │   │   │   │   │ └─┐            │ @Mutilar │",
+        "│       ┴ . └───┘ . └───┘ . ┴   ┴ .          │ v.1.0.0a │",
+        "├───────────┬─────────┬────────────┬─────────┼──────────┤",
+        "│ FLOORPLAN │         │            │         │ > MENU > │",
+        "├───────────┴─────────┴────────────┴─────────┴──────────┤",
         "│                                                       │",
         "│  INTERACT with your DIGITAL HABITAT via TOUCH INPUT:  │",
         "│   * TOGGLE various LIGHTS, SWITCHES, and PERIPHERALS  │",
@@ -75,14 +69,31 @@ window.onload = function () {
         "│ LOG: read Sensor(id='switch1').state;                 │",
         "│      write Light(id='light1').on = 1;                 │",
         "└───────────────────────────────────────────────────────┘"
-  
     )
-    
     ascii_display.forEach(function (line, y) {
         line.split('').forEach(function (char, x) {
             document.getElementById(y.toString() + ';' + x.toString()).innerText = char;
         });
     });
+    var ts = new Date();
+    ts.toLocaleTimeString().split(" ")[0].split('').forEach(function (char, x) {
+        document.getElementById('1;' + (x+47).toString()).innerText = char;
+    });
+    ts.toLocaleDateString().split('').forEach(function (char, x) {
+        document.getElementById('2;' + (x+47).toString()).innerText = char;
+    }) ;   
+   
+
+    
+}
+
+
+
+window.onload = function () {
+    tableCreate();
+    setInterval(tick, 1000);
+    
+
  
     // for (line in ascii_display) {
     //     for (char in line) {
