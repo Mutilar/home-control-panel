@@ -1,4 +1,4 @@
-const HEIGHT = 57, WIDTH = 56;
+const HEIGHT = 45, WIDTH = 56;
 
 function tableCreate() {
     var body = document.getElementById("code"),
